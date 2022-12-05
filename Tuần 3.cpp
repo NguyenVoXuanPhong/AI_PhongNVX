@@ -103,11 +103,11 @@ int findFirstIndex(int task[], int N) {
 
 void assignTaskOp2(int N, int table[][100], int results[]) {
   // CODE HERE
-  int task[N] = {0}; // danh sach task da lam (1) hay chua (0)
+  int task[N] = {0}; 
   for (int i = 0; i < N; i++) {
     int t = getMinTime2(i, table, task, N);
     task[t] = 1;
-    results[i] = t;
+      results[i] = t;
   }
 }
   
